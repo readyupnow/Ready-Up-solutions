@@ -18,6 +18,7 @@ import {
   Mail,
   Linkedin,
   Twitter,
+  Phone,
   Menu,
   X
 } from 'lucide-react';
@@ -538,7 +539,19 @@ const Contact = () => {
                 Ready to optimize your operations? Book a free 30-minute strategy call to discuss your goals and how we can help.
               </p>
               
-              <div className="space-y-6">
+              <div className="space-y-6 mb-10">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-accent">
+                    <Mail className="w-6 h-6" />
+                  </div>
+                  <a href="mailto:steven@readyupsolutions.com" className="text-white font-medium hover:text-accent transition-colors">steven@readyupsolutions.com</a>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-accent">
+                    <Phone className="w-6 h-6" />
+                  </div>
+                  <a href="tel:3109513370" className="text-white font-medium hover:text-accent transition-colors">(310) 951-3370</a>
+                </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-accent">
                     <CheckCircle2 className="w-6 h-6" />
@@ -631,13 +644,13 @@ const Footer = () => {
               We align technology with business strategy to deliver measurable ROI. Specialized in CRM, Automation, and AI workflows for modern organizations.
             </p>
             <div className="flex gap-4 mb-8">
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center text-white hover:bg-accent hover:text-primary transition-all">
+              <a href="https://www.linkedin.com/company/ready-up-solutions/posts/?feedView=all&viewAsMember=true" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center text-white hover:bg-accent hover:text-primary transition-all">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center text-white hover:bg-accent hover:text-primary transition-all">
-                <Twitter className="w-5 h-5" />
+              <a href="tel:3109513370" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center text-white hover:bg-accent hover:text-primary transition-all">
+                <Phone className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center text-white hover:bg-accent hover:text-primary transition-all">
+              <a href="mailto:steven@readyupsolutions.com" className="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center text-white hover:bg-accent hover:text-primary transition-all">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
@@ -669,12 +682,23 @@ const Footer = () => {
           </div>
 
           <div>
-            <h5 className="text-white font-bold mb-6">Legal</h5>
+            <h5 className="text-white font-bold mb-6">Contact</h5>
             <ul className="space-y-4">
-              <li><a href="#" className="text-slate-400 hover:text-accent transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-accent transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-accent transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="text-slate-400 hover:text-accent transition-colors">Contact Us</a></li>
+              <li>
+                <a href="mailto:steven@readyupsolutions.com" className="text-slate-400 hover:text-accent transition-colors flex items-center gap-2">
+                  <Mail className="w-4 h-4" /> steven@readyupsolutions.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:3109513370" className="text-slate-400 hover:text-accent transition-colors flex items-center gap-2">
+                  <Phone className="w-4 h-4" /> (310) 951-3370
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/ready-up-solutions/posts/?feedView=all&viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-accent transition-colors flex items-center gap-2">
+                  <Linkedin className="w-4 h-4" /> LinkedIn
+                </a>
+              </li>
             </ul>
           </div>
         </div>
