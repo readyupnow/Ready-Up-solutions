@@ -536,7 +536,7 @@ const Contact = () => {
                 Let’s Build Something That <span className="text-accent">Works</span>
               </h3>
               <p className="text-xl text-slate-400 mb-10">
-                Ready to optimize your operations? Book a free 30-minute strategy call to discuss your goals and how we can help.
+                Ready to optimize your operations? Book a free strategy session to discuss your goals and how we can help.
               </p>
               
               <div className="space-y-6 mb-10">
@@ -593,13 +593,23 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-slate-700">Company Name</label>
-                  <input 
-                    type="text" 
-                    placeholder="Acme Inc."
-                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
-                  />
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label className="text-sm font-bold text-slate-700">Company Name</label>
+                    <input 
+                      type="text" 
+                      placeholder="Acme Inc."
+                      className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-bold text-slate-700">Phone Number</label>
+                    <input 
+                      type="tel" 
+                      placeholder="(555) 000-0000"
+                      className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all"
+                    />
+                  </div>
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-slate-700">How can we help?</label>
